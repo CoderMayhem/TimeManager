@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MyHomePage(),
+      home: Entry(),
     );
   }
 }
@@ -31,11 +31,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  List<Task> tasks = [
-
-  ];
-
 
   @override
   Widget build(BuildContext context) {
@@ -65,6 +60,23 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+/*class DynamicList extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+
+    List<Task> tasks = [
+
+    ];
+
+    return ListView.builder(
+        itemCount: tasks.length,
+        itemBuilder:(context, index){
+          return TaskCard();
+        },
+    );
+  }
+}*/
 
 
 
