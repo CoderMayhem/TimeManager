@@ -17,8 +17,6 @@ class Entry extends StatelessWidget {
   class MyForm extends StatefulWidget{
   MyForm({Key key}) : super(key: key);
 
-
-
     @override
     _MyFormState createState() => _MyFormState();
   }
@@ -77,6 +75,8 @@ class Entry extends StatelessWidget {
     );
   }
 
+
+
   @override
   Widget build(BuildContext context){
     return Form(
@@ -97,7 +97,7 @@ class Entry extends StatelessWidget {
                 ),
                 onPressed: ()=> {
                   if(!_formKey.currentState.validate()){
-
+                    //do nothing
                   },
                   _formKey.currentState.save(),
                 Navigator.push(
